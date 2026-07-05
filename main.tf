@@ -1,5 +1,6 @@
 module "ec2" {
-  source        = "../terraform-aws-instance"
+ source  = "app.terraform.io/devopspractice-aws/instance/aws"
+  version = "1.0.0"
   ami_id        = var.ami_id
   instance-type = var.instance-type
 
